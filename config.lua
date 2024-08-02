@@ -2,11 +2,17 @@ Config = {}
 
 Config.defaultlang = "de_lang"
 
-Config.FirstWarningTimer = 300  -- Time in Sec 300 = 5 Min
-Config.SecoundWarningTimer = 600  -- Time in Sec 600 = 10 Min
+Config.FirstWarningTimer = 600  -- Time in Sec 600 = 10 Min
+Config.SecoundWarningTimer = 780  -- Time in Sec 780 = 13 Min
 Config.LastWarningTimer = 900  -- Time in Sec 900 = 15 Min
 
 Config.KickTimer = 960 -- Time in Sec 960 = 16 Min 
+
+Config.IgnoreAdmins = true
+Config.AdminGroup = 'admin'
+
+Config.NotAfkCommand = 'NichtAfk'
+
 
 -- Webhook Settings
 

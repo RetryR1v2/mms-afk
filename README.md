@@ -12,7 +12,8 @@
 # Changelog
 
 - 1.1.0 Initial Release Version
-
+- 1.1.1 Added Ignore Admin 
+- Added Command to Say you are not AFK
 
 # installation 
 

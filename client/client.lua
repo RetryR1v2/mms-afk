@@ -4,17 +4,35 @@ local Timer = 0
 local Webhook = 0
 ---------------------------------------------------------------------------------
 
+RegisterCommand(Config.NotAfkCommand, function()
+    Timer = 0
+    Webhool = 0
+    VORPcore.NotifyTip(_U('NotAFK'),4000)
+end)
+
 Citizen.CreateThread(function()
     Citizen.Wait(10000)
-    TriggerEvent('mms-afk:client:startafktimer')
+    TriggerEvent('mms-afk:server:getplayerdata')
 end)
 
 
 RegisterNetEvent('vorp:SelectedCharacter')
 AddEventHandler('vorp:SelectedCharacter', function()
     Citizen.Wait(10000)
-    TriggerEvent('mms-afk:client:startafktimer')
+    TriggerEvent('mms-afk:server:getplayerdata')
 end)
+
+RegisterNetEvent('mms-afk:client:recieveuserdata')
+AddEventHandler('mms-afk:client:recieveuserdata',function(group)
+    --- CHECK IF ADMIN IGNORED BY AFK
+    if group == Config.AdminGroup and Config.IgnoreAdmins then
+        Citizen.Wait(1000)
+    else
+        Citizen.Wait(10000)
+        TriggerEvent('mms-afk:client:startafktimer')
+    end
+end)
+
 
 RegisterNetEvent('mms-afk:client:startafktimer')
 AddEventHandler('mms-afk:client:startafktimer',function()

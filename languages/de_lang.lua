@@ -7,4 +7,5 @@ Locales["de_lang"] = {
     WebhookSecoundWarning = ' Wurde das Zweite mal Verwarnt!!!',
     WebhookThirdWarning = ' Wurde das Dritte mal Verwarnt!!!',
     WebhookKick = ' Wurde wegen AFK Gekickt !!!',
+    NotAFK = 'Danke für die Meldung!!!',
 }

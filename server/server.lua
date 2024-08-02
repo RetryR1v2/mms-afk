@@ -29,6 +29,15 @@ local function CheckVersion()
     end)
 end
 
+--- Get Player Data
+
+RegisterServerEvent('mms-afk:server:getplayerdata',function()
+    local src = source
+    local Character = VORPcore.getUser(src).getUsedCharacter
+    local group = Character.group
+    TriggerClientEvent('mms-afk:client:recieveuserdata',src,group)
+end)
+
 RegisterServerEvent('mms-afk:server:kickplayer',function ()
     local src = source
     DropPlayer(src,_U('KickReason'))
