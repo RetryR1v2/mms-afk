@@ -14,6 +14,7 @@
 - 1.1.0 Initial Release Version
 - 1.1.1 Added Ignore Admin 
 - Added Command to Say you are not AFK
+- 1.1.2 Bugfix now Its Running Fine Again
 
 # installation 
 

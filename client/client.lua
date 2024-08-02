@@ -12,14 +12,14 @@ end)
 
 Citizen.CreateThread(function()
     Citizen.Wait(10000)
-    TriggerEvent('mms-afk:server:getplayerdata')
+    TriggerServerEvent('mms-afk:server:getplayerdata')
 end)
 
 
 RegisterNetEvent('vorp:SelectedCharacter')
 AddEventHandler('vorp:SelectedCharacter', function()
     Citizen.Wait(10000)
-    TriggerEvent('mms-afk:server:getplayerdata')
+    TriggerServerEvent('mms-afk:server:getplayerdata')
 end)
 
 RegisterNetEvent('mms-afk:client:recieveuserdata')
