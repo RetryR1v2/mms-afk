@@ -48,21 +48,23 @@ RegisterServerEvent('mms-afk:server:SendWebhook',function (Webhook)
     local Character = VORPcore.getUser(src).getUsedCharacter
     local firstname = Character.firstname
     local lastname = Character.lastname
-    if Webhook == 1 then
-        if Config.WebHook then
-            VORPcore.AddWebhook(Config.WHTitle, Config.WHLink,firstname .. ' ' .. lastname .. _U('WebhookFirstWarning'), Config.WHColor, Config.WHName, Config.WHLogo, Config.WHFooterLogo, Config.WHAvatar)
-        end
-    elseif Webhook == 2 then
-        if Config.WebHook then
-            VORPcore.AddWebhook(Config.WHTitle, Config.WHLink,firstname .. ' ' .. lastname .. _U('WebhookSecoundWarning'), Config.WHColor, Config.WHName, Config.WHLogo, Config.WHFooterLogo, Config.WHAvatar)
-        end
-    elseif Webhook == 3 then
-        if Config.WebHook then
-            VORPcore.AddWebhook(Config.WHTitle, Config.WHLink,firstname .. ' ' .. lastname .. _U('WebhookThirdWarning'), Config.WHColor, Config.WHName, Config.WHLogo, Config.WHFooterLogo, Config.WHAvatar)
-        end
-    elseif Webhook == 4 then
-        if Config.WebHook then
-            VORPcore.AddWebhook(Config.WHTitle, Config.WHLink,firstname .. ' ' .. lastname .. _U('WebhookKick'), Config.WHColor, Config.WHName, Config.WHLogo, Config.WHFooterLogo, Config.WHAvatar)
+    if firstname and lastname ~= nil then
+        if Webhook == 1 then
+            if Config.WebHook then
+                VORPcore.AddWebhook(Config.WHTitle, Config.WHLink,firstname .. ' ' .. lastname .. _U('WebhookFirstWarning'), Config.WHColor, Config.WHName, Config.WHLogo, Config.WHFooterLogo, Config.WHAvatar)
+            end
+        elseif Webhook == 2 then
+            if Config.WebHook then
+                VORPcore.AddWebhook(Config.WHTitle, Config.WHLink,firstname .. ' ' .. lastname .. _U('WebhookSecoundWarning'), Config.WHColor, Config.WHName, Config.WHLogo, Config.WHFooterLogo, Config.WHAvatar)
+            end
+        elseif Webhook == 3 then
+            if Config.WebHook then
+                VORPcore.AddWebhook(Config.WHTitle, Config.WHLink,firstname .. ' ' .. lastname .. _U('WebhookThirdWarning'), Config.WHColor, Config.WHName, Config.WHLogo, Config.WHFooterLogo, Config.WHAvatar)
+            end
+        elseif Webhook == 4 then
+            if Config.WebHook then
+                VORPcore.AddWebhook(Config.WHTitle, Config.WHLink,firstname .. ' ' .. lastname .. _U('WebhookKick'), Config.WHColor, Config.WHName, Config.WHLogo, Config.WHFooterLogo, Config.WHAvatar)
+            end
         end
     end
 end)

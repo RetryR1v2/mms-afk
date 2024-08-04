@@ -15,6 +15,7 @@
 - 1.1.1 Added Ignore Admin 
 - Added Command to Say you are not AFK
 - 1.1.2 Bugfix now Its Running Fine Again
+- 1.1.3 Bugfix Server Error.
 
 # installation 
 
