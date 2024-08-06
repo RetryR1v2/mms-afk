@@ -67,7 +67,6 @@ AddEventHandler('mms-afk:client:startafktimer',function()
             Citizen.Wait(100)
             TriggerServerEvent('mms-afk:server:kickplayer')
         end
-        print(Timer)
     end
 end)
 
