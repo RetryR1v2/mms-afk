@@ -67,5 +67,16 @@ AddEventHandler('mms-afk:client:startafktimer',function()
             Citizen.Wait(100)
             TriggerServerEvent('mms-afk:server:kickplayer')
         end
+        print(Timer)
+    end
+end)
+
+Citizen.CreateThread(function ()
+    while true do 
+        Wait(15000)
+        if IsNuiFocused() then
+            Timer = 0
+            Webhook = 0
+        end
     end
 end)
