@@ -26,9 +26,13 @@ RegisterNetEvent('mms-afk:client:recieveuserdata')
 AddEventHandler('mms-afk:client:recieveuserdata',function(group)
     --- CHECK IF ADMIN IGNORED BY AFK
     if group == Config.AdminGroup and Config.IgnoreAdmins then
-        Citizen.Wait(1000)
+        Citizen.Wait(5000)
+        if Config.Debug then
+            print(group)
+            print(Config.AdminGroup)
+        end
     else
-        Citizen.Wait(10000)
+        Citizen.Wait(5000)
         TriggerEvent('mms-afk:client:startafktimer')
     end
 end)
@@ -38,11 +42,10 @@ RegisterNetEvent('mms-afk:client:startafktimer')
 AddEventHandler('mms-afk:client:startafktimer',function()
     while true do
         local MyChar = PlayerPedId()
-        Citizen.Wait(450)
         MyCoords = GetEntityCoords(MyChar)
-        Citizen.Wait(450)
+        Citizen.Wait(20)
         NewCoords = GetEntityCoords(MyChar)
-        Citizen.Wait(100)
+        Citizen.Wait(1000)
         if MyCoords == NewCoords then
             Timer = Timer + 1
         elseif MyCoords ~= NewCoords then
@@ -66,6 +69,9 @@ AddEventHandler('mms-afk:client:startafktimer',function()
             TriggerServerEvent('mms-afk:server:SendWebhook',Webhook)
             Citizen.Wait(100)
             TriggerServerEvent('mms-afk:server:kickplayer')
+        end
+        if Config.Debug then
+            print(Timer)
         end
     end
 end)

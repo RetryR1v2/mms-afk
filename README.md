@@ -17,6 +17,9 @@
 - 1.1.2 Bugfix now Its Running Fine Again
 - 1.1.3 Bugfix Server Error.
 - 1.1.4 It Now Check if you Are in Menu ( Exmaple Stores or Clothing or Stable )
+- 1.1.5 Added Debug Prints 
+- Fixed Timer Bug
+- Fixed Ignore Admin Bug
 
 # installation 
 

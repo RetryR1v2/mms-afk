@@ -1,6 +1,7 @@
 Config = {}
 
 Config.defaultlang = "de_lang"
+Config.Debug = false
 
 Config.FirstWarningTimer = 600  -- Time in Sec 600 = 10 Min
 Config.SecoundWarningTimer = 780  -- Time in Sec 780 = 13 Min
