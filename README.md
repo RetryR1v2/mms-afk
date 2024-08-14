@@ -20,6 +20,8 @@
 - 1.1.5 Added Debug Prints 
 - Fixed Timer Bug
 - Fixed Ignore Admin Bug
+- 1.1.6 Added Start Timer for Peaple with Bad PC Thanks for Reporting
+- Fixed Debug Mode
 
 # installation 
 

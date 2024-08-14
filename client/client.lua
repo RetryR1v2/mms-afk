@@ -10,15 +10,16 @@ RegisterCommand(Config.NotAfkCommand, function()
     VORPcore.NotifyTip(_U('NotAFK'),4000)
 end)
 
-Citizen.CreateThread(function()
-    Citizen.Wait(10000)
-    TriggerServerEvent('mms-afk:server:getplayerdata')
-end)
-
+if Config.Debug then
+    Citizen.CreateThread(function()
+        Citizen.Wait(10000)
+        TriggerServerEvent('mms-afk:server:getplayerdata')
+    end)
+end
 
 RegisterNetEvent('vorp:SelectedCharacter')
 AddEventHandler('vorp:SelectedCharacter', function()
-    Citizen.Wait(10000)
+    Citizen.Wait(Config.WaitTime *1000)
     TriggerServerEvent('mms-afk:server:getplayerdata')
 end)
 
