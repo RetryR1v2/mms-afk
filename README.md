@@ -22,6 +22,10 @@
 - Fixed Ignore Admin Bug
 - 1.1.6 Added Start Timer for Peaple with Bad PC Thanks for Reporting
 - Fixed Debug Mode
+- 1.1.7 Changed Version Checker
+- Added Afk Command /afk Reason
+- Can Set AFK Player as Ghost Values Are 0-255 
+- Can Set AFK Player Invincible and/or Freeze him
 
 # installation 
 

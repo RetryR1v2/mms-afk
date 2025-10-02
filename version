@@ -1,0 +1,5 @@
+<1.1.7>
+- Changed Version Checker
+- Added Afk Command /afk Reason
+- Can Set AFK Player as Ghost Values Are 0-255 
+- Can Set AFK Player Invincible and/or Freeze him
