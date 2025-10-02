@@ -10,5 +10,5 @@ Locales["de_lang"] = {
     NotAFK = 'Danke für die Meldung!!!',
     AFKSince = 'AFK seit: ',
     AFKReason = 'Grund: ',
-    NoReason = 'Keiner'
+    NoReason = 'Keiner',
 }

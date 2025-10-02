@@ -8,4 +8,8 @@ Locales["en_lang"] = {
     WebhookThirdWarning = ' Wurde das Dritte mal Verwarnt!!!',
     WebhookKick = ' Wurde wegen AFK Gekickt !!!',
     NotAFK = 'Danke für die Meldung!!!',
+    --NEW
+    AFKSince = 'AFK seit: ',
+    AFKReason = 'Grund: ',
+    NoReason = 'Keiner',
 }
