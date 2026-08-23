@@ -34,7 +34,7 @@ Config.Textfont = 4 --0-5
 Config.WebHook = true
 
 Config.WHTitle = 'AFK System:'
-Config.WHLink = 'https://discordapp.com/api/webhooks/1268962506769174741/QVtv-oqQyPnXTO8QJ5xvTGl6Xf268e6hfOuDhegygP_gTiIkGmBu39PRDZ_46YR-M3WS'  -- Discord WH link Here
+Config.WHLink = ''  -- Discord WH link Here
 Config.WHColor = 16711680 -- red
 Config.WHName = 'AFK System:' -- name
 Config.WHLogo = '' -- must be 30x30px
